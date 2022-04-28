@@ -12,16 +12,71 @@ a {
     text-decoration: none;
 }
 
+body {
+    font-family: 'Roboto';
+}
+
 .header {
-    background: #322E41;
+    background: url(../images/banner.png) no-repeat center /cover;
+    min-height: 565px;
+    display: flex;
+    flex-direction: column;
 }
 
 .nav {
-    max-width: 1140px;
-    width: 100%;
-    margin: auto;
+    background: #322E41;
+}
+
+.logo_link {
+    display: flex;
+    align-items: center;
 }
 
 .nav_content {
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    padding: 0 15px;
+    background: #322E41;
     display: flex;
+    justify-content: space-between;
 }
+
+.nav__list {
+   display: flex;
+}
+
+.nav__link {
+   padding: 23px 15px;
+   display: block;
+   border-bottom: 2px solid transparent;
+   color: white;
+   transition: 300ms;
+}
+
+.nav__link:hover {
+    color: #FFE600;
+    border-bottom: 2px solid white;
+}
+
+.header__content { 
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.header__content-title {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.header__content-desc {
+    font-size: 18px;
+}
+
+
+/* Banner */
+
